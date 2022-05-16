@@ -1,0 +1,48 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Learning\\NumericalMethods\\Lab4\\Lab4.csproj": {}
+  },
+  "projects": {
+    "D:\\Learning\\NumericalMethods\\Lab4\\Lab4.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Learning\\NumericalMethods\\Lab4\\Lab4.csproj",
+        "projectName": "Lab4",
+        "projectPath": "D:\\Learning\\NumericalMethods\\Lab4\\Lab4.csproj",
+        "packagesPath": "C:\\Users\\ilyam\\.nuget\\packages\\",
+        "outputPath": "D:\\Learning\\NumericalMethods\\Lab4\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ilyam\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.417\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

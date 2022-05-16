@@ -1,0 +1,18 @@
+D:\Learning\Чисельні методи\Lab4\obj\Debug\net48\Lab4.csprojAssemblyReference.cache
+D:\Learning\Чисельні методи\Lab4\obj\Debug\net48\Lab4.AssemblyInfoInputs.cache
+D:\Learning\Чисельні методи\Lab4\obj\Debug\net48\Lab4.AssemblyInfo.cs
+D:\Learning\Чисельні методи\Lab4\obj\Debug\net48\Lab4.csproj.CoreCompileInputs.cache
+D:\Learning\Чисельні методи\Lab4\bin\Debug\net48\Lab4.exe.config
+D:\Learning\Чисельні методи\Lab4\bin\Debug\net48\Lab4.exe
+D:\Learning\Чисельні методи\Lab4\bin\Debug\net48\Lab4.pdb
+D:\Learning\Чисельні методи\Lab4\obj\Debug\net48\Lab4.exe
+D:\Learning\Чисельні методи\Lab4\obj\Debug\net48\Lab4.pdb
+D:\Learning\NumericalMethods\Lab4\bin\Debug\net48\Lab4.exe.config
+D:\Learning\NumericalMethods\Lab4\bin\Debug\net48\Lab4.exe
+D:\Learning\NumericalMethods\Lab4\bin\Debug\net48\Lab4.pdb
+D:\Learning\NumericalMethods\Lab4\obj\Debug\net48\Lab4.csprojAssemblyReference.cache
+D:\Learning\NumericalMethods\Lab4\obj\Debug\net48\Lab4.AssemblyInfoInputs.cache
+D:\Learning\NumericalMethods\Lab4\obj\Debug\net48\Lab4.AssemblyInfo.cs
+D:\Learning\NumericalMethods\Lab4\obj\Debug\net48\Lab4.csproj.CoreCompileInputs.cache
+D:\Learning\NumericalMethods\Lab4\obj\Debug\net48\Lab4.exe
+D:\Learning\NumericalMethods\Lab4\obj\Debug\net48\Lab4.pdb

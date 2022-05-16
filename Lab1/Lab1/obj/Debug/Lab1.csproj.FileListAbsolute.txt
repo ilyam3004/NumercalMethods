@@ -1,0 +1,8 @@
+C:\Users\ilyam\Desktop\Навчання\Чисельні методи\Lab1\Lab1\bin\Debug\Lab1.exe
+C:\Users\ilyam\Desktop\Навчання\Чисельні методи\Lab1\Lab1\bin\Debug\Lab1.pdb
+C:\Users\ilyam\Desktop\Навчання\Чисельні методи\Lab1\Lab1\obj\Debug\Lab1.csprojAssemblyReference.cache
+C:\Users\ilyam\Desktop\Навчання\Чисельні методи\Lab1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\ilyam\Desktop\Навчання\Чисельні методи\Lab1\Lab1\obj\Debug\Lab1.exe
+C:\Users\ilyam\Desktop\Навчання\Чисельні методи\Lab1\Lab1\obj\Debug\Lab1.pdb
+C:\Users\ilyam\Desktop\Навчання\Чисельні методи\Lab1\Lab1\bin\Debug\sfpl.so
+C:\Users\ilyam\Desktop\Навчання\Чисельні методи\Lab1\Lab1\bin\Debug\sfpl.dll
