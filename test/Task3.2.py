@@ -85,6 +85,6 @@ A = np.array([[3.51, 0.17, 3.75, -0.28],
 b = np.array([[0.75], [1.11], [0.21], [0.05]])
 
 LU = find_LU(A)
-print('Det',find_det(LU))
+print('Det:',find_det(LU))
 print('Inverse matrix:',inverse(LU))
 print('Solve:', solve_LU(LU, b))

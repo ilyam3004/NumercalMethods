@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Linq;
 
 namespace Lab4
 {
     public class Matrix
     {
-        private double[,] data;
+        public double[,] data;
         private double precalculatedDeterminant = double.NaN;
 
         private int m;
@@ -226,76 +227,52 @@ namespace Lab4
                 m[i, i + 1] = 0;
             return m;
         }
-        // def get_L(m):
-        // L = m.copy()
-        // for i in range(L.shape[0]):
-        // L[i, i + 1:] = 0
-        // print("Матриця L:")
-        // print(L)
-        //     return L
-        //
-        //
-        //     def get_U(m):
-        //     U = m.copy()
-        // for i in range(U.shape[0]):
-        // U[i, :i] = 0
-        // U[i, i] = 1
-        // print("Матриця U:")
-        // print(U)
-        //     return U
-
         public static void ShowMatrix(Matrix matrix)
         {
-            for (int i = 0; i < matrix.n; i++) {
-                for (int j = 0; j < matrix.n; j++) {
-                    Console.Write(matrix[i,j] + ", ");    
+            for (int i = 0; i < matrix.n; i++)
+            {
+                for (int j = 0; j < matrix.m; j++)
+                    Console.Write(matrix[i, j] + " ");
+                Console.WriteLine();
+            }    
+        }
+        
+        public static void ShowDoubleArrayMatrix(double[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++) 
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++) {
+                    Console.Write(matrix[i, j] + " ");       
                 }
                 Console.WriteLine();
             }
         }
+        public static double[,] GetC(int n)
+        {
+            double[,] arr = new double[n, n];
+            for(int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                    arr[i - 1, j - 1] = 0.1 * 3.0 * double.Parse(i.ToString()) * double.Parse(j.ToString());
+            }
+            return arr;
+        }
+
+        public void BindData(double[,] matrix) => this.data = matrix;
+        public static double EvklidNorm(double[] vector)
+        {
+            double powSum = 0;
+            for (int i = 0; i < vector.Length; i++)
+                powSum += Math.Pow(Math.Abs(vector[i]), 2.0);
+            return Math.Pow(powSum, 0.5);
+        }
+        // public double GetNumberOfConditions(double[,] matrix)
+        // {
+        //     Matrix tempMatrix = new Matrix(matrix.GetLength(0), matrix.GetLength(1));
+        //     tempMatrix.BindData(matrix);
+        //     double evklid = EvklidNorm(GetVectorB(GetC(6)));
+        //     double inverseEvklid = EvklidNorm(GetVectorB(tempMatrix.CreateInvertibleMatrix().data));
+        //     return evklid * inverseEvklid;
+        // }
     }
-        
-        
-        //def inverse(LU):
-        //     l_inv = np.linalg.inv(get_L(LU))
-        // u_inv = np.linalg.inv(get_U(LU))
-        // A_inv = np.dot(u_inv, l_inv)
-        //     print("Обернена матриця:")
-        // print(A_inv)
-//------------------------
-        //     def solve_LU(lu_matrix, b):
-        //     y = np.matrix(np.zeros([lu_matrix.shape[0], 1]))
-        // for i in range(y.shape[0]):
-        // y[i, 0] = (b[i, 0] - lu_matrix[i, :i] * y[:i]) / lu_matrix[i, i]
-        // x = np.matrix(np.zeros([lu_matrix.shape[0], 1]))
-        // for i in range(1, x.shape[0] + 1):
-        // x[-i, 0] = (y[-i] - lu_matrix[-i, -i:] * x[-i:, 0])
-        // return x
-        //
-        //
-        //     def get_L(m):
-        //     L = m.copy()
-        // for i in range(L.shape[0]):
-        // L[i, i + 1:] = 0
-        // print("Матриця L:")
-        // print(L)
-        //     return L
-        //
-        //
-        //     def get_U(m):
-        //     U = m.copy()
-        // for i in range(U.shape[0]):
-        // U[i, :i] = 0
-        // U[i, i] = 1
-        // print("Матриця U:")
-        // print(U)
-        //     return U
-        //
-        //
-        //     def inverse(LU):
-        //     l_inv = np.linalg.inv(get_L(LU))
-        // u_inv = np.linalg.inv(get_U(LU))
-        // A_inv = np.dot(u_inv, l_inv)
-        //     print("Обернена матриця:")
-        // print(A_inv)
-    }
+}
