@@ -25,12 +25,16 @@ t1 = [-0.866247, -0.422519, -0.266635, 0.26635, 0.422519, 0.866247]
 x_new = []
 for i in range(len(t1)):
     x_new.append((b + a) / 2. + (b - a) / 2. * t1[i])
-print("Chebeshow for n=6:", ((b - a) / n * sum(f2(x_new))))
-print("Absolute error:", abs(real - (b - a) / n * sum(f2(x_new))))
-print("Relative error:", abs((real - (b - a) / n * sum(f2(x_new))) / (b - a) / n * sum(f2(x_new))))
+
+absolute_error = abs(real - (b - a) / n * sum(f2(x_new)))
+print("Chebishow for n=6:", ((b - a) / n * sum(f2(x_new))))
+print("Absolute error:", absolute_error)
+print("Relative error:", abs(absolute_error / (b - a) / n * sum(f2(x_new))))
+absolute_error = abs(real - integrate.fixed_quad(f2, a, b, n=5)[0])
 print("Gauss for n=5:", integrate.fixed_quad(f2, a, b, n=5)[0])
-print("Absolute error:", abs(real - integrate.fixed_quad(f2, a, b, n=5)[0]))
-print("Relative error:", abs(real - integrate.fixed_quad(f2, a, b, n=5)[0]) / integrate.fixed_quad(f2, a, b, n=5)[0])
+print("Absolute error:", absolute_error)
+print("Relative error:", absolute_error / integrate.fixed_quad(f2, a, b, n=5)[0])
+absolute_error = abs(real - integrate.fixed_quad(f2, a, b, n=6)[0])
 print("Gauss for n=6:", integrate.fixed_quad(f2, a, b, n=6)[0])
-print("Absolute error:", abs(real - integrate.fixed_quad(f2, a, b, n=6)[0]))
-print("Relative error:", abs(real - integrate.fixed_quad(f2, a, b, n=6)[0]) / integrate.fixed_quad(f2, a, b, n=6)[0])
+print("Absolute error:", absolute_error)
+print("Relative error:", absolute_error/ integrate.fixed_quad(f2, a, b, n=6)[0])
